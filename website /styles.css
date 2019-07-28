@@ -221,7 +221,10 @@ form {
     }
   }
   /*automatic slideshow*/
-  .mySlides {display:none;}
+  .mySlides {display:none;
+  height: 500px;
+  width: 750px;
+  }
   /*about us pg*/
   #more {display: none;}
 

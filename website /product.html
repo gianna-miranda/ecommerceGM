@@ -15,16 +15,6 @@
   <body>
        
       <!-- Navbar -->
-      <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-          <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-            <i class="fa fa-remove"></i>
-          </a>
-          <a href="#" class="w3-bar-item w3-button">Link 1</a>
-          <a href="#" class="w3-bar-item w3-button">Link 2</a>
-          <a href="#" class="w3-bar-item w3-button">Link 3</a>
-          <a href="#" class="w3-bar-item w3-button">Link 4</a>
-          <a href="#" class="w3-bar-item w3-button">Link 5</a>
-        </nav>
       <div class="w3-top">
           <div class="w3-bar w3-theme-d2 w3-left-align">
            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
@@ -35,14 +25,13 @@
              <div class="w3-dropdown-hover w3-hide-small">
              <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
              <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-               <a href="#" class="w3-bar-item w3-button">Link</a>
-               <a href="#" class="w3-bar-item w3-button">Link</a>
-               <a href="#" class="w3-bar-item w3-button">Link</a>
+               <a href="donnations.html" class="w3-bar-item w3-button">Donation</a>
+               <a href="movements.html" class="w3-bar-item w3-button">Get Involved</a>
+               <a href="checkout.html" class="w3-bar-item w3-button">Checkout</a>
              </div>
            </div>
            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
           </div>
-         
            <!-- Navbar on small screens -->
            <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
              <a href="#team" class="w3-bar-item w3-button">Team</a>
@@ -52,12 +41,23 @@
              <a href="#" class="w3-bar-item w3-button">Search</a>
            </div>
          </div>
+         <!--Jquery Slider-->
+         <div class="container">	
+            <!-- Codrops top bar -->
+            <div class="codrops-top clearfix">
+              <a href="http://tympanus.net/Development/SliderPagination/"><strong>&laquo; Previous Demo: </strong>Slider Pagination Concept</a>
+              <span class="right"><a href="http://tympanus.net/codrops/?p=13218"><strong>Back to the Codrops Article</strong></a></span>
+            </div><!--/ Codrops top bar -->
+            <header class="clearfix">
+              <h1>Simple Multi-Item Slider <span>Category slider with CSS animations</span></h1>
+            </header>
+            <div class="main">
          <div id="mi-slider" class="mi-slider">
             <ul>
-              <li><a href="#"><img src="IMG_2571.jpg" alt="soap1"><h4>Spirulina Rosemary and Mint</h4></a></li>
-              <li><a href="#"><img src="IMG_2569.jpg" alt="soap02"><h4>Oatmeal and Honey</h4></a></li>
-              <li><a href="#"><img src="IMG_2568.jpg" alt="soap03"><h4>Activated Charcoal</h4></a></li>
-              <li><a href="#"><img src="IMG_2567.jpg" alt="soap04"><h4>chocolate mint, coffee with orange, and red wine with rice</h4></a></li>
+              <li><a href="#"><img src="images/IMG_2571.jpg" alt="soap1"><h4>Spirulina Rosemary and Mint</h4></a></li>
+              <li><a href="#"><img src="images/IMG_2569.jpg" alt="soap02"><h4>Oatmeal and Honey</h4></a></li>
+              <li><a href="#"><img src="images/IMG_2568.jpg" alt="soap03"><h4>Activated Charcoal</h4></a></li>
+              <li><a href="#"><img src="images/IMG_2567.jpg" alt="soap04"><h4>chocolate mint, coffee with orange, and red wine with rice</h4></a></li>
             </ul>
             <ul>
               <li><a href="#"><img src="---" alt="img05"><h4>Belts</h4></a></li>
@@ -86,6 +86,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.catslider.js"></script>
+		<script>
+			$(function() {
+				$( '#mi-slider' ).catslider();
+			});
+		</script>
   </body>
 </html>
