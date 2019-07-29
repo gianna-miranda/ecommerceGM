@@ -139,3 +139,4 @@ $("form").submit(e => {
 	  })
 	  .fail((xhr, status) => $("#error-modal").openModal());
   });
+}
